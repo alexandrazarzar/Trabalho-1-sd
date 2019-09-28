@@ -107,7 +107,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 296 656 472 672)
+	(rect 296 672 472 688)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "Out[3..0]" (rect 90 0 133 12)(font "Arial" ))
 	(pt 0 8)
@@ -229,7 +229,7 @@ applicable agreement for further details.
 	(rotate180)
 )
 (symbol
-	(rect 40 392 72 424)
+	(rect 72 400 104 432)
 	(text "GND" (rect 8 6 29 16)(font "Arial" (font_size 6)))
 	(text "inst5" (rect 3 -1 26 11)(font "Arial" )(invisible))
 	(port
@@ -247,7 +247,7 @@ applicable agreement for further details.
 	(flipx)
 )
 (symbol
-	(rect 88 392 120 424)
+	(rect 264 464 296 496)
 	(text "GND" (rect 8 6 29 16)(font "Arial" (font_size 6)))
 	(text "inst6" (rect 3 -1 26 11)(font "Arial" )(invisible))
 	(port
@@ -263,6 +263,57 @@ applicable agreement for further details.
 		(line (pt 8 24)(pt 24 24)(line_width 1))
 	)
 	(flipx)
+)
+(symbol
+	(rect 8 200 72 248)
+	(text "OR2" (rect 45 0 63 10)(font "Arial" (font_size 6)))
+	(text "inst1" (rect 38 37 61 49)(font "Arial" ))
+	(port
+		(pt 64 32)
+		(input)
+		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
+		(text "IN2" (rect 45 23 62 35)(font "Courier New" (bold))(invisible))
+		(line (pt 64 32)(pt 49 32)(line_width 1))
+	)
+	(port
+		(pt 64 16)
+		(input)
+		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
+		(text "IN1" (rect 45 7 62 19)(font "Courier New" (bold))(invisible))
+		(line (pt 64 16)(pt 49 16)(line_width 1))
+	)
+	(port
+		(pt 0 24)
+		(output)
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect -1 15 16 27)(font "Courier New" (bold))(invisible))
+		(line (pt 16 24)(pt 0 24)(line_width 1))
+	)
+	(drawing
+		(line (pt 50 36)(pt 39 36)(line_width 1))
+		(line (pt 50 13)(pt 39 13)(line_width 1))
+		(arc (pt 57 19)(pt 57 29)(rect 45 8 78 41)(line_width 1))
+		(arc (pt 39 13)(pt 15 24)(rect 7 13 70 76)(line_width 1))
+		(arc (pt 15 24)(pt 39 35)(rect 7 -27 70 36)(line_width 1))
+	)
+	(flipy)
+)
+(symbol
+	(rect 112 168 144 200)
+	(text "GND" (rect 8 16 29 26)(font "Arial" (font_size 6)))
+	(text "inst4" (rect 3 21 26 33)(font "Arial" )(invisible))
+	(port
+		(pt 16 0)
+		(output)
+		(text "1" (rect 18 0 23 12)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 18 0 23 12)(font "Courier New" (bold))(invisible))
+		(line (pt 16 8)(pt 16 0)(line_width 1))
+	)
+	(drawing
+		(line (pt 8 8)(pt 16 16)(line_width 1))
+		(line (pt 16 16)(pt 24 8)(line_width 1))
+		(line (pt 8 8)(pt 24 8)(line_width 1))
+	)
 )
 (connector
 	(pt 264 112)
@@ -317,17 +368,6 @@ applicable agreement for further details.
 	(pt 512 448)
 )
 (connector
-	(pt 176 664)
-	(pt 296 664)
-	(bus)
-)
-(connector
-	(text "Out[2..1]" (rect 160 617 172 660)(font "Arial" )(vertical))
-	(pt 176 664)
-	(pt 176 232)
-	(bus)
-)
-(connector
 	(pt 480 184)
 	(pt 480 296)
 )
@@ -352,26 +392,92 @@ applicable agreement for further details.
 	(pt 392 448)
 )
 (connector
-	(pt 56 664)
-	(pt 104 664)
+	(pt 296 680)
+	(pt 280 680)
+	(bus)
 )
 (connector
-	(pt 104 664)
-	(pt 176 664)
+	(pt 88 680)
+	(pt 64 680)
+	(bus)
 )
 (connector
-	(text "Out[3]" (rect 40 628 52 658)(font "Arial" )(vertical))
-	(pt 56 424)
-	(pt 56 664)
+	(text "Out[0]" (rect 264 644 276 674)(font "Arial" )(vertical))
+	(pt 280 680)
+	(pt 280 496)
 )
 (connector
-	(text "Out[0]" (rect 88 628 100 658)(font "Arial" )(vertical))
-	(pt 104 424)
-	(pt 104 664)
+	(text "Out[3]" (rect 72 644 84 674)(font "Arial" )(vertical))
+	(pt 88 432)
+	(pt 88 680)
+)
+(connector
+	(pt 128 168)
+	(pt 128 160)
+)
+(connector
+	(pt 128 160)
+	(pt 80 160)
+)
+(connector
+	(pt 80 160)
+	(pt 80 216)
+)
+(connector
+	(pt 80 216)
+	(pt 72 216)
+)
+(connector
+	(pt 88 680)
+	(pt 144 680)
+	(bus)
+)
+(connector
+	(pt 144 680)
+	(pt 160 680)
+	(bus)
+)
+(connector
+	(pt 160 680)
+	(pt 280 680)
+	(bus)
+)
+(connector
+	(pt 72 232)
+	(pt 160 232)
+)
+(connector
+	(pt 160 232)
+	(pt 176 232)
+)
+(connector
+	(pt 8 224)
+	(pt -16 224)
+)
+(connector
+	(pt -16 352)
+	(pt -16 224)
+)
+(connector
+	(pt 144 352)
+	(pt -16 352)
+)
+(connector
+	(text "Out[2]" (rect 128 644 140 674)(font "Arial" )(vertical))
+	(pt 144 352)
+	(pt 144 680)
+)
+(connector
+	(text "Out[1]" (rect 144 644 156 674)(font "Arial" )(vertical))
+	(pt 160 680)
+	(pt 160 232)
 )
 (junction (pt 392 280))
 (junction (pt 480 296))
 (junction (pt 480 376))
 (junction (pt 392 360))
-(junction (pt 176 664))
-(junction (pt 104 664))
+(junction (pt 280 680))
+(junction (pt 88 680))
+(junction (pt 160 232))
+(junction (pt 144 680))
+(junction (pt 160 680))
