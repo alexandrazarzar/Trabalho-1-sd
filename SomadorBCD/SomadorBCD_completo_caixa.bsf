@@ -20,10 +20,38 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 16 16 112 112)
+	(rect 16 16 224 112)
 	(text "SomadorBCD_completo" (rect 5 0 138 14)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 80 25 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "A[3..0]" (rect 0 0 37 14)(font "Arial" (font_size 8)))
+		(text "A[3..0]" (rect 21 27 58 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "B[3..0]" (rect 0 0 36 14)(font "Arial" (font_size 8)))
+		(text "B[3..0]" (rect 21 43 57 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 208 32)
+		(output)
+		(text "overflow" (rect 0 0 51 14)(font "Arial" (font_size 8)))
+		(text "overflow" (rect 136 27 187 41)(font "Arial" (font_size 8)))
+		(line (pt 208 32)(pt 192 32)(line_width 1))
+	)
+	(port
+		(pt 208 48)
+		(output)
+		(text "SaidaRealOficial[7..0]" (rect 0 0 120 14)(font "Arial" (font_size 8)))
+		(text "SaidaRealOficial[7..0]" (rect 67 43 187 57)(font "Arial" (font_size 8)))
+		(line (pt 208 48)(pt 192 48)(line_width 3))
+	)
 	(drawing
-		(rectangle (rect 16 16 80 80)(line_width 1))
+		(rectangle (rect 16 16 192 80)(line_width 1))
 	)
 )
